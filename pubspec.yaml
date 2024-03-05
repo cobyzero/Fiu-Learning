@@ -39,6 +39,8 @@ dependencies:
   sizer: ^2.0.15
   easy_padding: ^0.1.7
   flutter_bloc: ^8.1.4
+  get_it: ^7.6.7
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -78,9 +80,18 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Cabin
+    - family: Montserrat-Bold
       fonts:
-        - asset: assets/fonts/Cabin-Regular.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
+    - family: Montserrat-ExtraBold
+      fonts:
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+    - family: Montserrat-Regular
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+    - family: Montserrat-SemiBold
+      fonts:
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
         
   #
   # For details regarding fonts from package dependencies,

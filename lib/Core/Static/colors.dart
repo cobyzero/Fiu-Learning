@@ -10,5 +10,6 @@ class Palette {
   static const textRegular = Color(0xff787878);
 
   static const facebook = Color(0xff7583CA);
-  static const filled = Color(0xffFFF9EC);
+  static const filled = Color(0xFFFAEED5);
+  static const yellowFit = Color(0xffFFE39B);
 }

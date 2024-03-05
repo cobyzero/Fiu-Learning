@@ -38,7 +38,7 @@ class CustomSocialButton extends StatelessWidget {
               Texts.regular(
                 "CONTINUE WITH GOOGLE",
                 color: Palette.textSemiBold,
-                fontSize: 13.sp,
+                fontSize: 12.sp,
               ),
             ],
           ),
@@ -61,7 +61,7 @@ class CustomSocialButton extends StatelessWidget {
               Texts.regular(
                 "CONTINUE WITH FACEBOOK",
                 color: Palette.white,
-                fontSize: 13.sp,
+                fontSize: 12.sp,
               ),
             ],
           ),

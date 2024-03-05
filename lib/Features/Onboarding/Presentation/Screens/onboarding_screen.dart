@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:fuilearning/Core/Static/colors.dart';
 import 'package:fuilearning/Core/Static/const.dart';
 import 'package:fuilearning/Core/Static/texts.dart';
-import 'package:fuilearning/Features/Onboarding/Presentation/Widgets/custom_button.dart';
+import 'package:fuilearning/Core/Widgets/custom_button.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sizer/sizer.dart';
 
@@ -27,7 +27,7 @@ class OnboardingScreen extends StatelessWidget {
                 "${assetsImages}onboarding.png",
                 width: 80.w,
               ),
-              Texts.regular(
+              Texts.bold(
                 "Speak with confidence",
                 fontSize: 16.sp,
                 color: Palette.textBold,
@@ -40,29 +40,11 @@ class OnboardingScreen extends StatelessWidget {
                 alignment: TextAlign.center,
               ),
               CustomButton(
-                text: "Sign Up",
+                text: "Get Started",
                 onPressed: () {
-                  context.go("/register");
+                  context.go("/login");
                 },
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Texts.regular(
-                    "Already have an account?",
-                    color: Palette.gray,
-                    fontSize: 13.sp,
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Texts.regular(
-                      "SIGN IN",
-                      color: Palette.kPrimary,
-                      fontSize: 13.sp,
-                    ),
-                  ),
-                ],
-              )
             ],
           ).symmetric(horizontal: 10.w, vertical: 5.h),
         ),

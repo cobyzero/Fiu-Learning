@@ -8,9 +8,13 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.text,
     required this.onPressed,
+    this.backgroundColor,
+    this.textColor,
   });
   final String text;
   final Function() onPressed;
+  final Color? textColor;
+  final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
@@ -24,12 +28,13 @@ class CustomButton extends StatelessWidget {
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        backgroundColor: Palette.kPrimary,
+        backgroundColor: backgroundColor ?? Palette.kPrimary,
         elevation: 10,
       ),
       child: Texts.bold(
         text,
         fontSize: 13.sp,
+        color: textColor ?? Palette.textBold,
       ),
     );
   }

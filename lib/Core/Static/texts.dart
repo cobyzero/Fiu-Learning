@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fuilearning/Core/Static/colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Texts extends StatelessWidget {
   final String text;
@@ -34,7 +35,7 @@ class Texts extends StatelessWidget {
     this.alignment = TextAlign.left,
     this.color = Palette.textBold,
     this.maxLines = 30,
-    this.fontFamily,
+    this.fontFamily = "Montserrat-Bold",
     this.letterSpacing = 0,
     this.width,
   }) : fontWeight = FontWeight.bold;
@@ -47,7 +48,7 @@ class Texts extends StatelessWidget {
     this.alignment = TextAlign.left,
     this.color = Palette.textRegular,
     this.maxLines = 30,
-    this.fontFamily,
+    this.fontFamily = "Montserrat-Regular",
     this.letterSpacing = 0,
     this.width,
   }) : fontWeight = FontWeight.normal;
@@ -60,7 +61,7 @@ class Texts extends StatelessWidget {
     this.alignment = TextAlign.left,
     this.color = Palette.textSemiBold,
     this.maxLines = 30,
-    this.fontFamily,
+    this.fontFamily = "Montserrat-SemiBold",
     this.letterSpacing = 0,
     this.width,
   }) : fontWeight = FontWeight.w600;
@@ -72,13 +73,14 @@ class Texts extends StatelessWidget {
       child: Text(
         text,
         textAlign: alignment,
-        style: TextStyle(
+        style: GoogleFonts.montserrat().copyWith(
           color: color,
           fontSize: fontSize,
           height: height,
           fontWeight: fontWeight,
           decoration: TextDecoration.none,
           letterSpacing: letterSpacing,
+          fontFamily: fontFamily,
         ),
         maxLines: maxLines,
         softWrap: true,
